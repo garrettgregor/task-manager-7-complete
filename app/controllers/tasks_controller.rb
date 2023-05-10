@@ -6,6 +6,14 @@ class TasksController < ApplicationController
   def new
   end
 
+  def random
+
+  end
+
+  def showmethetasks
+    redirect_to "/tasks"
+  end
+
   def create
     task = Task.new({
       title: params[:task][:title],
